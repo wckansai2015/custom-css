@@ -849,7 +849,6 @@ h1, h2, h3, h4, h5, h6 {
 	left: 50%;
 	z-index: 51;
 	border-radius: 50%;
-
 	animation-duration: 4s;
 	animation-name: glow;
 	animation-iteration-count: infinite;
@@ -857,7 +856,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @keyframes glow {
 	0% {
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255,255,255,0);
 		width: 50px;
 		height: 50px;
 		margin-left: 342px;
@@ -865,11 +864,11 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	50% {
-		background: rgba(255, 255, 255, 0.5);
+		background: rgba(255,255,255,0.5);
 	}
 
 	100% {
-		background: rgba(255, 255, 255, 0);
+		background: rgba(255,255,255,0);
 		width: 150px;
 		height: 150px;
 		margin-left: 292px;
@@ -2393,3 +2392,37 @@ h1, h2, h3, h4, h5, h6 {
 	-o-transition-timing-function: ease-in-out;
 	transition-timing-function: ease-in-out;
 }
+
+/* 2015/05/25 Okamoto Added Start */
+#masthead .home-link h1 {
+	max-width: 960px;
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	.home #masthead .home-link h1:before,
+				.home #masthead .home-link h1:after {
+		left: auto;
+	}
+
+	.home #masthead .home-link h1:before {
+		right: 0;
+		top: 47%;
+	}
+
+	.home #masthead .home-link h1:after {
+		right: 11%;
+	}
+}
+
+@media (max-width: 359px) {
+	.home #masthead .home-link h1:before {
+		width: 100px;
+	}
+
+	.home #masthead .home-link h1:after {
+		display: none;
+	}
+}
+
+/* 2015/05/25 Okamoto Added　Enc */
