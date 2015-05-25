@@ -842,7 +842,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home #masthead .home-link h1:after {
-	display: block;
+	display: none;
 	content: "";
 	position: absolute;
 	overflow: hidden;
@@ -864,6 +864,11 @@ h1, h2, h3, h4, h5, h6 {
 	        animation-duration: 4s;
 	        animation-name: glow;
 	        animation-iteration-count: infinite;
+}
+
+@media (min-width: 960px) {
+.home #masthead .home-link h1:after {
+	display: block;
 }
 
 @-webkit-keyframes glow {
@@ -970,6 +975,7 @@ h1, h2, h3, h4, h5, h6 {
 		margin-left: 292px;
 		top: 175px;
 	}
+}
 }
 
 @media (max-width: 767px) {
