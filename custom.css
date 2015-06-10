@@ -1,4 +1,5 @@
 @charset  "UTF-8";
+@import  "https://mismith0227.github.io/csswapuu/style.css";
 
 body {
 	font-size: 14px;
@@ -94,7 +95,7 @@ table th {
 	clear: both;
 }
 
-.inblock-list, .wcorg-organizers, .sponsor-level, .tix-attendee-list {
+.inblock-list, .wcorg-organizers, .tix-attendee-list {
 	width: 100%;
 	word-spacing: -1em;
 	display: table;
@@ -242,14 +243,15 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .nav-menu li a:hover {
 	color: #fff;
 	text-decoration: none;
+	background: #17af92;
 }
 
 .navbar .nav-menu li .sub-menu {
-	background: #5CB7CC;
+	background: #17af92;
 }
 
 .navbar .nav-menu li .sub-menu a {
-	background: #5CB7CC;
+	background: #17af92;
 	padding: 15px 20px;
 }
 
@@ -265,7 +267,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .nav-menu li.current-menu-item a, .navbar .nav-menu li.current-menu-parent a {
 	font-style: normal;
 	color: #34495e;
-	text-shadow: rgba(255,255,255,0.4) 0 1px 0;
+/*text-shadow: rgba(255,255,255,0.4) 0 1px 0;*/
+	background: #17AF87;
 }
 
 .navbar .nav-menu li.current-menu-item a:hover, .navbar .nav-menu li.current-menu-parent a:hover {
@@ -279,9 +282,10 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 15px 20px;
 }
 
-.navbar .nav-menu li.current-menu-item .sub-menu a:hover, .navbar .nav-menu li.current-menu-parent .sub-menu a:hover {
-	color: rgba(255,255,255,0.7);
+.navbar .nav-menu li.current-menu-item .sub-menu a:hover, .navbar .nav-menu li.current-menu-parent .sub-menu a:hover, .navbar .nav-menu li .sub-menu a:hover {
+/*color: rgba(255,255,255,0.7);*/
 	text-decoration: none;
+	background: #13947C;
 }
 
 .navbar .nav-menu li#menu-item-476652 .sub-menu, .navbar .nav-menu li#menu-item-476477 .sub-menu, .navbar .nav-menu li#menu-item-383950 .sub-menu {
@@ -325,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .toggled-on li.current-menu-item a:hover {
-	color: #ffeca2;
+	color: #ffffff;
 }
 
 .navbar .toggled-on li .sub-menu {
@@ -335,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .toggled-on li .sub-menu a {
 	color: #FFF;
-	background: #7eb4cc;
+	background: #17AF87;
 }
 
 .navbar .toggled-on li .sub-menu a:hover {
@@ -724,12 +728,12 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-#secondary .wcb_widget_sponsors .sponsor-level.bronze .sponsor-logo {
+#secondary .wcb_widget_sponsors .sponsor-level.bronze .sponsor-logo,#secondary .wcb_widget_sponsors .sponsor-level.tool .sponsor-logo {
 	width: 20%;
 }
 
 @media (max-width: 643px) {
-	#secondary .wcb_widget_sponsors .sponsor-level.bronze .sponsor-logo {
+	#secondary .wcb_widget_sponsors .sponsor-level.bronze .sponsor-logo,#secondary .wcb_widget_sponsors .sponsor-level.tool .sponsor-logo {
 		width: 50%;
 	}
 }
@@ -762,11 +766,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* timetable */
-.page-id-784 > #page > #main > div#tertiary {
+.page-id-786 > #page > #main > div#tertiary, .page-id-784 > #page > #main > div#tertiary, .page-id-881 > #page > #main > div#tertiary {
 	display: none;
 }
 
-.page-id-784 > #page > #main > div#primary {
+.page-id-786 > #page > #main > div#primary, .page-id-784 > #page > #main > div#primary, .page-id-881 > #page > #main > div#primary {
 	width: 100%;
 }
 
@@ -852,26 +856,26 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-animation-duration: 4s;
 	-webkit-animation-name: glow;
 	-webkit-animation-iteration-count: infinite;
-	   -moz-animation-duration: 4s;
-	   -moz-animation-name: glow;
-	   -moz-animation-iteration-count: infinite;
-	    -ms-animation-duration: 4s;
-	    -ms-animation-name: glow;
-	    -ms-animation-iteration-count: infinite;
-	     -o-animation-duration: 4s;
-	     -o-animation-name: glow;
-	     -o-animation-iteration-count: infinite;
-	        animation-duration: 4s;
-	        animation-name: glow;
-	        animation-iteration-count: infinite;
+	-moz-animation-duration: 4s;
+	-moz-animation-name: glow;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-duration: 4s;
+	-ms-animation-name: glow;
+	-ms-animation-iteration-count: infinite;
+	-o-animation-duration: 4s;
+	-o-animation-name: glow;
+	-o-animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-name: glow;
+	animation-iteration-count: infinite;
 }
 
 @media (min-width: 960px) {
-.home #masthead .home-link h1:after {
-	display: block;
-}
+	.home #masthead .home-link h1:after {
+		display: block;
+	}
 
-@-webkit-keyframes glow {
+	@-webkit-keyframes glow {
 	0% {
 		background: rgba(255,255,255,0);
 		width: 50px;
@@ -892,6 +896,7 @@ h1, h2, h3, h4, h5, h6 {
 		top: 175px;
 	}
 }
+
 @-moz-keyframes glow {
 	0% {
 		background: rgba(255,255,255,0);
@@ -913,6 +918,7 @@ h1, h2, h3, h4, h5, h6 {
 		top: 175px;
 	}
 }
+
 @-ms-keyframes glow {
 	0% {
 		background: rgba(255,255,255,0);
@@ -934,6 +940,7 @@ h1, h2, h3, h4, h5, h6 {
 		top: 175px;
 	}
 }
+
 @-o-keyframes glow {
 	0% {
 		background: rgba(255,255,255,0);
@@ -955,6 +962,7 @@ h1, h2, h3, h4, h5, h6 {
 		top: 175px;
 	}
 }
+
 @keyframes glow {
 	0% {
 		background: rgba(255,255,255,0);
@@ -976,6 +984,8 @@ h1, h2, h3, h4, h5, h6 {
 		top: 175px;
 	}
 }
+
+
 }
 
 @media (max-width: 767px) {
@@ -1384,48 +1394,46 @@ h1, h2, h3, h4, h5, h6 {
 /*-------------------------------------*/
 /* SESSION */
 /*-------------------------------------*/
-.post-460743 .timetable, .post-476787 .timetable {
+.timetable {
 	border-bottom: none;
 	margin-bottom: 20px;
 }
 
-.post-460743 .timetable thead tr:first-child th, .post-476787 .timetable thead tr:first-child th {
-	background-color: #ffeca2;
+.timetable thead tr:first-child th, .timetable thead tr:first-child th {
+	background-color: #17af92;
 	border: 1px solid #ddd;
-	border-bottom: 4px solid #17af92;
+	border-bottom: 4px solid #096553;
 	color: #fff;
 	text-shadow: rgba(52,73,94,0.4) 0 1px 0;
 }
 
-.post-460743 .timetable thead tr:last-child th, .post-476787 .timetable thead tr:last-child th {
+.timetable thead tr:last-child th {
 	background-color: #efefef;
 	padding: 5px 0;
 	font-weight: normal;
-	font-size: 13px;
 }
 
-.post-460743 .timetable tbody tr th, .post-476787 .timetable tbody tr th {
+.timetable tbody tr th {
 	text-align: center;
-	font-size: 12px;
 	background-color: #efefef;
 }
 
-.post-460743 .timetable tr th, .post-476787 .timetable tr th {
+.timetable tr th {
 	text-align: center;
 }
 
-.post-460743 .timetable tr th:first-child, .post-460743 .timetable tr td:first-child, .post-476787 .timetable tr th:first-child, .post-476787 .timetable tr td:first-child {
+timetable tr th:first-child, .timetable tr td:first-child {
 	width: 15%;
 }
 
-.post-460743 .timetable th, .post-460743 .timetable td, .post-476787 .timetable th, .post-476787 .timetable td {
-	width: 21%;
+.timetable th, .timetable td {
+	width: 16%;
 	border: 1px solid #ddd;
 	padding: 10px;
 }
 
 @media (max-width: 643px) {
-	.post-460743 .timetable th, .post-460743 .timetable td, .post-476787 .timetable th, .post-476787 .timetable td {
+	.timetable th, .timetable td {
 		display: block;
 		width: auto !important;
 		border: none;
@@ -1433,76 +1441,76 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-.post-460743 .timetable td, .post-476787 .timetable td {
+.timetable td {
 	vertical-align: top;
-	width: 21%;
+	width: 16%;
 	border: 1px solid #ddd;
 	padding: 10px;
 }
 
-.post-460743 .timetable td.soon, .post-476787 .timetable td.soon {
+.timetable td.soon {
 	background-color: #fff5fb;
 }
 
-.post-460743 .timetable td.rest, .post-476787 .timetable td.rest {
+.timetable td.rest {
 	text-align: center;
 	background-color: #e7ffe5;
 }
 
 @media (max-width: 643px) {
-	.post-460743 .timetable td.rest, .post-476787 .timetable td.rest {
+	.timetable td.rest {
 		border-left: 0;
 	}
 }
 
-.post-460743 .timetable td.none, .post-476787 .timetable td.none {
+.timetable td.none {
 	text-align: center;
 	background-color: #e0e0e0;
 }
 
-.post-460743 .timetable td.none:before, .post-476787 .timetable td.none:before {
+.timetable td.none:before {
 	content: "-";
 }
 
-.post-460743 .timetable td.open, .post-476787 .timetable td.open {
+.timetable td.open {
 	text-align: center;
 }
 
-.post-460743 .timetable dl, .post-476787 .timetable dl {
+.timetable dl {
 	line-height: 1.5;
 }
 
-.post-460743 .timetable dl dt, .post-460743 .timetable dl dd, .post-476787 .timetable dl dt, .post-476787 .timetable dl dd {
+.timetable dl dt,.timetable dl dd {
 	margin-bottom: 0;
 	padding-bottom: 10px;
 }
 
-.post-460743 .timetable dl dt:last-child, .post-460743 .timetable dl dd:last-child, .post-476787 .timetable dl dt:last-child, .post-476787 .timetable dl dd:last-child {
+.timetable dl dt:last-child,.timetable dl dd:last-child {
 	padding-bottom: 0;
 }
 
-.post-460743 .timetable dl dt.time, .post-460743 .timetable dl dd.time, .post-476787 .timetable dl dt.time, .post-476787 .timetable dl dd.time {
+.timetable dl dt.time,.timetable dl dd.time {
 	display: none;
 }
 
-.post-460743 .timetable dl dt, .post-476787 .timetable dl dt {
+.timetable dl dt {
 	font-size: 15px;
 }
 
-.post-460743 .timetable dl dt a, .post-476787 .timetable dl dt a {
+.timetable dl dt a {
 	text-decoration: none;
 	color: #17af92;
 }
 
-.post-460743 .timetable dl dt a:hover, .post-476787 .timetable dl dt a:hover {
+.timetable dl dt a:hover {
 	text-decoration: underline;
 }
 
-.post-460743 .timetable dl dd, .post-476787 .timetable dl dd {
+.timetable dl dd {
 	padding-left: 0;
 }
 
-.post-460743 .timetable dl dd.speaker-name:before, .post-476787 .timetable dl dd.speaker-name:before {
+.timetable dl dd.speaker-name:before {
 	font-family: 'Genericons';
 	display: inline-block;
 	vertical-align: middle;
@@ -1510,12 +1518,12 @@ h1, h2, h3, h4, h5, h6 {
 	content: '\f304';
 }
 
-.post-460743 .timetable dl dd.hr-line, .post-476787 .timetable dl dd.hr-line {
+.timetable dl dd.hr-line {
 	border-bottom: 1px solid #DDD;
 	margin-bottom: 10px;
 }
 
-.post-460743 .timetable dl dd.tt-beginner, .post-476787 .timetable dl dd.tt-beginner {
+.timetable dl dd.tt-beginner {
 	border-left: 3px solid #72b6ce;
 	display: inline-block;
 	padding: 2px 7px;
@@ -1524,7 +1532,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #f9f9f9;
 }
 
-.post-460743 .timetable dl dd.tt-beginner:before, .post-476787 .timetable dl dd.tt-beginner:before {
+.timetable dl dd.tt-beginner:before {
 	font-family: 'Genericons';
 	display: inline-block;
 	vertical-align: middle;
@@ -1532,15 +1540,15 @@ h1, h2, h3, h4, h5, h6 {
 	content: '\f461';
 }
 
-.post-460743 .timetable dl dd a, .post-476787 .timetable dl dd a {
+.timetable dl dd a {
 	text-decoration: none;
 }
 
-.post-460743 .timetable dl dd a:hover, .post-476787 .timetable dl dd a:hover {
+.timetable dl dd a:hover {
 	text-decoration: underline;
 }
 
-.post-460743 .timetable span, .post-476787 .timetable span {
+.timetable span {
 	display: block;
 	background: #ffeca2;
 	font-size: 10px;
@@ -1553,36 +1561,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 643px) {
-	.post-460743 .timetable thead, .post-476787 .timetable thead {
+	.timetable thead {
 		display: none;
 	}
 
-	.post-460743 .timetable .none, .post-476787 .timetable .none {
+	.timetable .none {
 		display: none;
 	}
 
-	.post-460743 .timetable tbody th, .post-460743 .timetable tbody td, .post-476787 .timetable tbody th, .post-476787 .timetable tbody td {
+	.timetable tbody th, .timetable tbody td {
 		margin-bottom: 10px;
 	}
 
-	.post-460743 .timetable tbody th, .post-476787 .timetable tbody th {
+	.timetable tbody th {
 		border-bottom: 1px solid #c0c0c0;
 		border-bottom: 0;
 		padding: 10px 0;
 	}
 
-	.post-460743 .timetable tbody td, .post-476787 .timetable tbody td {
+	.timetable tbody td {
 		border: 0;
 		border-left: 3px solid #ffeca2;
 		margin-bottom: 20px;
 	}
 
-	.post-460743 .timetable tbody dl dt.time, .post-460743 .timetable tbody dl dd.time, .post-476787 .timetable tbody dl dt.time, .post-476787 .timetable tbody dl dd.time {
+	.timetable tbody dl dt.time,.timetable tbody dl dd.time {
 		display: block;
 		padding-bottom: 10px;
 	}
 
-	.post-460743 .timetable tbody dl dt.time:before, .post-460743 .timetable tbody dl dd.time:before, .post-476787 .timetable tbody dl dt.time:before, .post-476787 .timetable tbody dl dd.time:before {
+	.timetable tbody dl dt.time:before,.timetable tbody dl dd.time:before {
 		font-family: 'Genericons';
 		display: inline-block;
 		vertical-align: middle;
@@ -1591,24 +1599,24 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-.post-460743 .timetable.contributor-table, .post-476787 .timetable.contributor-table {
+.timetable.contributor-table {
 	width: 60%;
 	margin: 0 auto 50px;
 }
 
 @media (max-width: 643px) {
-	.post-460743 .timetable.contributor-table, .post-476787 .timetable.contributor-table {
+	.timetable.contributor-table {
 		width: 100%;
 	}
 }
 
-.post-460743 .attention-list, .post-476787 .attention-list {
+..post-476787 .attention-list {
 	padding-left: 0;
 	list-style: none;
 	color: #f64519;
 }
 
-.post-460743 .contributor-more-info, .post-476787 .contributor-more-info {
+.post-476787 .contributor-more-info {
 	padding: 15px;
 	border: 1px solid #ffeca2;
 }
@@ -1711,6 +1719,12 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 	margin-top: -10px;
 	color: #c00;
+}
+
+.btn-day a {
+	width: 48%;
+	margin: 1%;
+	float: left;
 }
 
 /*-------------------------------------*/
@@ -1886,8 +1900,12 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-#post-476476 .entry-header, #post-478151 .entry-header {
+#post-1194 .entry-header, #post-478151 .entry-header {
 	display: none;
+}
+
+#post-1194 .archive .hentry, .home .hentry {
+	padding-bottom: 60px;
 }
 
 #post-476476 ul {
@@ -2503,7 +2521,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 767px) {
 	.home #masthead .home-link h1:before,
-				.home #masthead .home-link h1:after {
+																																						.home #masthead .home-link h1:after {
 		left: auto;
 	}
 
@@ -2528,3 +2546,209 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 2015/05/25 Okamoto Added　Enc */
+/* 2015/05/30 Koyama Added Start */
+@media (max-width: 643px) {
+	.timetable th, .timetable td {
+		display: block;
+		width: auto !important;
+		border: none;
+		padding: 0;
+	}
+
+	th.th-place {
+		display: none;
+	}
+
+	td.td-people {
+		display: none;
+	}
+
+	th.th-people {
+		display: none !important;
+	}
+
+	td.td-place {
+		display: none !important;
+	}
+
+	td.td-none {
+		display: none !important;
+	}
+
+	tr > td > dl {
+		margin-left: 10px !important;
+	}
+
+	.timetable > tbody > tr > th {
+		text-align: center;
+	}
+
+	.timetable > td {
+		vertical-align: top;
+		width: 21%;
+		border: 1px solid #ddd;
+		padding: 10px;
+	}
+
+	.timetable td.soon {
+		background-color: #fff5fb;
+	}
+
+	.timetable td.rest {
+		text-align: center;
+		background-color: #e7ffe5;
+	}
+}
+
+@media (max-width: 643px) {
+	.timetable td.rest {
+		border-left: 0;
+	}
+}
+
+.timetable td.none {
+	text-align: center;
+	background-color: #e0e0e0;
+}
+
+.timetable td.none:before {
+	content: "-";
+}
+
+.timetable td.open {
+	text-align: center;
+}
+
+.timetable dl {
+	line-height: 1.5;
+}
+
+.timetable dl dt, .timetable dl dd {
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+
+.timetable dl dt:last-child, .timetable dl dd:last-child {
+	padding-bottom: 0;
+}
+
+.timetable dl dt.time, .timetable dl dd.time {
+	display: none;
+}
+
+.timetable dl dt {
+	font-size: 15px;
+}
+
+.timetable dl dt a {
+	text-decoration: none;
+	color: #21759b;
+}
+
+.timetable dl dt a:hover {
+	text-decoration: underline;
+}
+
+.timetable dl dd {
+	padding-left: 0;
+}
+
+.timetable dl dd.speaker-name:before {
+	font-family: 'Genericons';
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 17px;
+	content: '\f304';
+}
+
+.timetable dl dd.hr-line {
+	border-bottom: 1px solid #DDD;
+	margin-bottom: 10px;
+}
+
+.timetable dl dd.tt-beginner {
+	border-left: 3px solid #72b6ce;
+	display: inline-block;
+	padding: 2px 7px;
+	font-size: 12px;
+	margin-bottom: 10px;
+	background-color: #f9f9f9;
+}
+
+.timetable dl dd.tt-beginner:before {
+	font-family: 'Genericons';
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 15px;
+	content: '\f461';
+}
+
+.timetable dl dd a {
+	text-decoration: none;
+}
+
+.timetable dl dd a:hover {
+	text-decoration: underline;
+}
+
+.timetable span {
+	display: block;
+	background: #cce2e5;
+	font-size: 10px;
+	padding: 2px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+@media (max-width: 643px) {
+	.timetable thead {
+		display: none;
+	}
+
+	.timetable .none {
+		display: none;
+	}
+
+	.timetable tbody th, .timetable tbody td, .timetable tbody th, .timetable tbody td {
+		margin-bottom: 10px;
+	}
+
+	.timetable tbody th, .timetable tbody th {
+		border-bottom: 1px solid #34495e;
+		border-bottom: 0;
+		padding: 10px 0;
+	}
+
+	.timetable tbody td, .timetable tbody td {
+		border: 0;
+		border-left: 3px solid #72b6ce;
+		margin-bottom: 20px;
+	}
+
+	.timetable tbody dl dt.time, .timetable tbody dl dd.time, .timetable tbody dl dt.time, .timetable tbody dl dd.time {
+		display: block;
+		padding-bottom: 10px;
+	}
+
+	.timetable tbody dl dt.time:before,. .timetable tbody dl dd.time:before, .timetable tbody dl dt.time:before, .timetable tbody dl dd.time:before {
+		font-family: 'Genericons';
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 17px;
+		content: '\f417';
+	}
+}
+
+.timetable.contributor-table, .timetable.contributor-table {
+	width: 60%;
+	margin: 0 auto 50px;
+}
+
+@media (max-width: 643px) {
+	.timetable.contributor-table, .timetable.contributor-table {
+		width: 100%;
+	}
+}
