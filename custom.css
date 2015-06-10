@@ -2521,7 +2521,7 @@ timetable tr th:first-child, .timetable tr td:first-child {
 
 @media (max-width: 767px) {
 	.home #masthead .home-link h1:before,
-																																						.home #masthead .home-link h1:after {
+	.home #masthead .home-link h1:after {
 		left: auto;
 	}
 
@@ -2750,5 +2750,14 @@ timetable tr th:first-child, .timetable tr td:first-child {
 @media (max-width: 643px) {
 	.timetable.contributor-table, .timetable.contributor-table {
 		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.entry-content .css-wapuu {
+		-webkit-transform: scale(0.75);
+		-ms-transform: scale(0.75);
+		transform: scale(0.75);
+		margin: -50px;
 	}
 }
