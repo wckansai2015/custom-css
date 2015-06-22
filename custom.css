@@ -1,5 +1,6 @@
 @charset  "UTF-8";
 @import  "https://mismith0227.github.io/csswapuu/style.min.css";
+@import  "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
 
 body {
 	font-size: 14px;
@@ -766,11 +767,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* timetable */
-.page-id-786 > #page > #main > div#tertiary, .page-id-784 > #page > #main > div#tertiary, .page-id-881 > #page > #main > div#tertiary {
+.page-id-786 > #page > #main > div#tertiary, .page-id-784 > #page > #main > div#tertiary, .page-id-881 > #page > #main > div#tertiary, .page-id-2204 > #page > #main > div#tertiary {
 	display: none;
 }
 
-.page-id-786 > #page > #main > div#primary, .page-id-784 > #page > #main > div#primary, .page-id-881 > #page > #main > div#primary {
+.page-id-786 > #page > #main > div#primary, .page-id-784 > #page > #main > div#primary, .page-id-881 > #page > #main > div#primary, .page-id-2204 > #page > #main > div#primary {
 	width: 100%;
 }
 
@@ -1348,6 +1349,55 @@ h1, h2, h3, h4, h5, h6 {
 
 .entry-content .wcorg-sponsor .attachment-post-thumbnail {
 	padding-bottom: 20px;
+}
+
+.entry-content .dtleft {
+	float: left;
+	width: 30%;
+	display: inline;
+	margin: 0 0 10px;
+	font-weight: normal;
+}
+
+.entry-content .ddright {
+	float: right;
+	width: 70%;
+	padding-left: 0;
+	margin: 0 0 10px;
+}
+
+@media (max-width: 643px) {
+	.entry-content .dtleft {
+		width: 100%;
+	}
+
+	.entry-content .ddright {
+		width: 100%;
+		padding-left: 20px;
+	}
+}
+
+.entry-content .caraleft {
+	float: left;
+	width: 50%;
+	display: inline;
+	margin: 0;
+}
+
+.entry-content .cararight {
+	float: right;
+	width: 50%;
+	margin: 0;
+}
+
+@media (max-width: 643px) {
+	.entry-content .caraleft {
+		width: 100%;
+	}
+
+	.entry-content .cararight {
+		width: 100%;
+	}
 }
 
 /*-------------------------------------*/
@@ -2521,7 +2571,7 @@ timetable tr th:first-child, .timetable tr td:first-child {
 
 @media (max-width: 767px) {
 	.home #masthead .home-link h1:before,
-	.home #masthead .home-link h1:after {
+																		.home #masthead .home-link h1:after {
 		left: auto;
 	}
 
@@ -2760,4 +2810,66 @@ timetable tr th:first-child, .timetable tr td:first-child {
 		transform: scale(0.75);
 		margin: -50px;
 	}
+}
+
+/*
+ * #Organizer
+ */
+.wcorg-organizers {
+	overflow: hidden;
+/*display: flex;*/
+}
+
+.wcorg-organizer {
+	width: 32%;
+/*float: left;*/
+	display: inline-block;
+	position: relative;
+	padding: 10px;
+}
+
+.wcorg-organizer img {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 100px;
+	height: 100px;
+}
+
+.wcorg-organizer h2 {
+	margin-left: 110px;
+	font-size: 1.25rem;
+	font-weight: normal;
+}
+
+.organizer-info {
+	margin: 0 0 10px 110px !important;
+}
+
+.organizer-info p,.organizer-info ul {
+	margin: 0;
+	font-size: .875rem;
+}
+
+.organizer-comment {
+	font-size: .75rem;
+	line-height: 1.5;
+}
+
+.organizer-comment p {
+	margin-bottom: 0;
+}
+
+.organizer-comment h3 {
+	margin: .5rem 0;
+	font-size: 1rem;
+	border-bottom: 2px solid #f9d132;
+}
+
+.page-id-10 #tertiary {
+	display: none;
+}
+
+.page-id-10 #primary {
+	width: 100%;
 }
