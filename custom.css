@@ -96,7 +96,7 @@ table th {
 	clear: both;
 }
 
-.inblock-list, .wcorg-organizers, .tix-attendee-list {
+.inblock-list, .tix-attendee-list {
 	width: 100%;
 	word-spacing: -1em;
 	display: table;
@@ -105,7 +105,7 @@ table th {
 	margin: 0;
 }
 
-.inblock-list li, .inblock-list .wcorg-organizer, .inblock-list .sponsor-logo, .wcorg-organizers li, .wcorg-organizers .wcorg-organizer, .wcorg-organizers .sponsor-logo, .sponsor-level li, .sponsor-level .wcorg-organizer, .sponsor-level .sponsor-logo, .tix-attendee-list li, .tix-attendee-list .wcorg-organizer, .tix-attendee-list .sponsor-logo {
+.inblock-list li, .inblock-list .wcorg-organizer, .inblock-list .sponsor-logo, .wcorg-organizers li, .wcorg-organizers .sponsor-logo, .sponsor-level li, .sponsor-level .wcorg-organizer, .sponsor-level .sponsor-logo, .tix-attendee-list li, .tix-attendee-list .wcorg-organizer, .tix-attendee-list .sponsor-logo {
 	word-spacing: normal;
 	display: inline-block;
 	vertical-align: top;
@@ -2794,43 +2794,73 @@ h1, h2, h3, h4, h5, h6 {
  */
 .wcorg-organizers {
 	overflow: hidden;
-/*display: flex;*/
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	-ms-column-count: 2;
+	-o-column-count: 2;
+	-webkit-column-gap: 50px;
+	-moz-column-gap: 50px;
+	-ms-column-gap: 50px;
+	-o-column-gap: 50px;
 }
 
-.wcorg-organizer {
-	width: 32%;
-/*float: left;*/
-	display: inline-block;
+.entry-content .wcorg-organizer {
 	position: relative;
-	padding: 10px;
+	display: inline-block;
+	background: #f9f9f9;
+	min-width: 495px;
+	padding: 2em;
+	margin: 0 0 50px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.wcorg-organizer h2 {
+	padding-top: 125px;
+	text-align: center;
+	font-weight: normal;
+	border-bottom: 0;
+	padding-bottom: 0;
 }
 
 .wcorg-organizer img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	overflow: hidden;
 	position: absolute;
-	left: 10px;
-	top: 10px;
+	left: 50%;
+	top: 30px;
+	margin-left: -50px;
 	width: 100px;
 	height: 100px;
 }
 
-.wcorg-organizer h2 {
-	margin-left: 110px;
-	font-size: 1.25rem;
-	font-weight: normal;
-}
-
 .organizer-info {
-	margin: 0 0 10px 110px !important;
+	text-align: center;
 }
 
-.organizer-info p,.organizer-info ul {
+.organizer-info p, .organizer-info ul {
 	margin: 0;
 	font-size: .875rem;
 }
 
-.organizer-comment {
-	font-size: .75rem;
-	line-height: 1.5;
+.organizer-info ul li {
+	margin-right: 0.25em;
+}
+
+.organizer-info ul,
+.organizer-info ul li,
+.organizer-info ul li a,
+.organizer-info ul li a span,
+.organizer-info ul li a .genericon:before {
+	line-height: 1em;
+	vertical-align: top;
 }
 
 .organizer-comment p {
@@ -2838,9 +2868,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .organizer-comment h3 {
+	border-top: 1px solid #eee;
+	padding: 1em 0 0;
 	margin: .5rem 0;
 	font-size: 1rem;
-	border-bottom: 2px solid #f9d132;
 }
 
 .page-id-10 #tertiary {
@@ -2849,4 +2880,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-id-10 #primary {
 	width: 100%;
+}
+
+@media (max-width: 1070px) {
+	.wcorg-organizers {
+		overflow: hidden;
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		-ms-column-count: 1;
+		-o-column-count: 1;
+	}
+
+	.entry-content .wcorg-organizer {
+		min-width: 100%;
+		margin-bottom: 20px;
+	}
 }
