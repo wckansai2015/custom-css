@@ -797,7 +797,8 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 }
 
 #masthead .home-link h1 {
-	width: 960px;
+	width: 100%;
+	max-width: 960px;
 	height: 258px;
 	background: url(https://kansai.wordcamp.org/2015/files/2015/05/logo.png) no-repeat center top;
 	-webkit-background-size: contain;
@@ -881,7 +882,7 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 	animation-iteration-count: infinite;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1000px) {
 	.home #masthead .home-link h1:after {
 		display: block;
 	}
@@ -998,21 +999,6 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 
 }
 
-@media (max-width: 767px) {
-	#masthead .home-link h1 {
-	}
-}
-
-@media (max-width: 643px) {
-	#masthead .home-link h1 {
-	}
-}
-
-@media (max-width: 359px) {
-	#masthead .home-link h1 {
-	}
-}
-
 .home #masthead .home-link, .error404 #masthead .home-link {
 	height: 618px;
 	background: #b3f4d3 url(https://kansai.wordcamp.org/2015/files/2015/05/bg-main.png) no-repeat center top;
@@ -1024,43 +1010,74 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 	position: relative;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
+	.home #masthead .home-link h1:before {
+		left: auto;
+		right: 20px;
+		top: 235px;
+	}
+}
+
+@media (max-width: 900px) {
+	.home #masthead .home-link h1:before {
+		top: 260px;
+	}
+}
+
+@media (max-width: 850px) {
+	.home #masthead .home-link h1:before {
+		top: 290px;
+	}
+}
+
+@media (max-width: 800px) {
+	.home #masthead .home-link h1:before {
+		top: 320px;
+	}
+}
+
+@media (max-width: 740px) {
 	.home #masthead .home-link, .error404 #masthead .home-link {
-		-webkit-background-size: auto 100%;
-		-moz-background-size: auto 100%;
-		-o-background-size: auto 100%;
-		background-size: auto 100%;
-		height: 500px;
+		height: 515px;
+	}
+
+	.home #masthead .home-link h1, .error404 #masthead .home-link h1 {
+		height: 214px;
+	}
+
+	.home #masthead .home-link h1:before {
+		width: 150px;
+		top: 260px;
 	}
 }
 
-@media (max-width: 643px) {
+@media (max-width: 640px) {
 	.home #masthead .home-link, .error404 #masthead .home-link {
-		height: 350px;
+		height: 405px;
+	}
+
+	.home #masthead .home-link h1, .error404 #masthead .home-link h1 {
+		height: 165px;
+	}
+
+	.home #masthead .home-link h1:before {
+		width: 125px;
+		top: 180px;
 	}
 }
 
-@media (max-width: 359px) {
+@media (max-width: 480px) {
 	.home #masthead .home-link, .error404 #masthead .home-link {
-		height: 230px;
+		height: 265px;
 	}
-}
 
-@media (max-width: 767px) {
 	.home #masthead .home-link h1, .error404 #masthead .home-link h1 {
-		height: 200px;
+		height: 109px;
 	}
-}
 
-@media (max-width: 643px) {
-	.home #masthead .home-link h1, .error404 #masthead .home-link h1 {
-		height: 135px;
-	}
-}
-
-@media (max-width: 359px) {
-	.home #masthead .home-link h1, .error404 #masthead .home-link h1 {
-		height: 90px;
+	.home #masthead .home-link h1:before {
+		width: 100px;
+		top: 120px;
 	}
 }
 
@@ -1076,6 +1093,7 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 		padding: 0 10px;
 	}
 }
+
 
 /*-------------------------------------*/
 /* ONE COLUMN */
@@ -2566,38 +2584,6 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 	transition-timing-function: ease-in-out;
 }
 
-/* 2015/05/25 Okamoto Added Start */
-#masthead .home-link h1 {
-	max-width: 960px;
-	width: 100%;
-}
-
-@media (max-width: 767px) {
-	.home #masthead .home-link h1:before, .home #masthead .home-link h1:after {
-		left: auto;
-	}
-
-	.home #masthead .home-link h1:before {
-		right: 0;
-		top: 47%;
-	}
-
-	.home #masthead .home-link h1:after {
-		right: 11%;
-	}
-}
-
-@media (max-width: 359px) {
-	.home #masthead .home-link h1:before {
-		width: 100px;
-	}
-
-	.home #masthead .home-link h1:after {
-		display: none;
-	}
-}
-
-/* 2015/05/25 Okamoto Added　Enc */
 /* 2015/05/30 Koyama Added Start */
 @media (max-width: 643px) {
 	.timetable th, .timetable td {
@@ -2868,7 +2854,7 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 .organizer-info ul li a,
 .organizer-info ul li a span,
 .organizer-info ul li a .genericon:before {
-	line-height: 1em;
+	line-height: 1.5;
 	vertical-align: top;
 }
 
