@@ -782,7 +782,7 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 	max-width: none;
 	min-height: inherit;
 	min-height: auto;
-	padding: 0;
+	padding: 0 1em;
 	height: 315px;
 	background: #b3f4d3 url(https://kansai.wordcamp.org/2015/files/2015/05/bg-sub.png) no-repeat center top;
 	-webkit-background-size: auto 100%;
@@ -790,24 +790,6 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 	-o-background-size: auto 100%;
 	background-size: auto 100%;
 	text-indent: -9999px;
-}
-
-@media (max-width: 999px) {
-	#masthead .home-link {
-	}
-}
-
-@media (max-width: 643px) {
-	#masthead .home-link {
-		background-position: right top;
-		height: 250px;
-	}
-}
-
-@media (max-width: 359px) {
-	#masthead .home-link {
-		background-position: 0 0;
-	}
 }
 
 #masthead .home-link h1 {
@@ -820,6 +802,36 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 	background-size: contain;
 	text-align: center;
 	margin: 0 auto;
+}
+
+@media (max-width: 740px) {
+	#masthead .home-link {
+		height: 265px;
+	}
+
+	#masthead .home-link h1 {
+		height: 214px;
+	}
+}
+
+@media (max-width: 640px) {
+	#masthead .home-link {
+		height: 205px;
+	}
+
+	#masthead .home-link h1 {
+		height: 165px;
+	}
+}
+
+@media (max-width: 480px) {
+	#masthead .home-link {
+		height: 135px;
+	}
+
+	#masthead .home-link h1 {
+		height: 109px;
+	}
 }
 
 /*wapuu*/
