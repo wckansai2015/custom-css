@@ -1574,12 +1574,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timetable dl dd.tt-label {
-	border-left: 3px solid #17af92;
 	display: inline-block;
-	padding: 2px 7px;
+	padding: 4px 7px;
 	font-size: 12px;
+	line-height: 12px;
 	margin-bottom: 10px;
-	background-color: #f9f9f9;
+	background-color: #FF7928;
+	color: #fff;
+	border-radius: 3px;
 }
 
 .timetable dl dd.tt-beginner:before {
@@ -1599,7 +1601,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timetable .tt-label .fa {
-	margin-right: 0.5em;
+	margin-right: .5em;
 }
 
 @media (max-width: 643px) {
@@ -2562,8 +2564,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 767px) {
-	.home #masthead .home-link h1:before,
-																		.home #masthead .home-link h1:after {
+	.home #masthead .home-link h1:before, .home #masthead .home-link h1:after {
 		left: auto;
 	}
 
@@ -2668,10 +2669,6 @@ h1, h2, h3, h4, h5, h6 {
 .timetable dl dt, .timetable dl dd {
 	margin-bottom: 0;
 	padding-bottom: 10px;
-}
-
-.timetable dl dt:last-child, .timetable dl dd:last-child {
-	padding-bottom: 0;
 }
 
 .timetable dl dt.time, .timetable dl dd.time {
