@@ -229,6 +229,15 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 10px 20px;
 }
 
+.navbar .nav-menu .sub-menu li {
+	width: 100%;
+}
+
+ul.nav-menu ul a, .nav-menu ul ul a {
+	width: 100%;
+	min-width: 200px;
+}
+
 @media (max-width: 767px) {
 	.navbar .nav-menu li a {
 		padding: 15px 10px;
@@ -252,7 +261,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .nav-menu li .sub-menu a {
-	background: #17af92;
 	padding: 15px 20px;
 }
 
@@ -265,26 +273,20 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: normal;
 }
 
+.navbar .nav-menu li.current-menu-item > a, .navbar .nav-menu li.current-menu-parent > a {
+	color: #fff;
+}
+
 .navbar .nav-menu li.current-menu-item a, .navbar .nav-menu li.current-menu-parent a {
 	font-style: normal;
-	color: #34495e;
-/*text-shadow: rgba(255,255,255,0.4) 0 1px 0;*/
-	background: #17AF87;
+	background: #17af92;
 }
 
 .navbar .nav-menu li.current-menu-item a:hover, .navbar .nav-menu li.current-menu-parent a:hover {
-	color: #34495e;
-	text-shadow: rgba(255,255,255,0.4) 0 1px 0;
-}
-
-.navbar .nav-menu li.current-menu-item .sub-menu a, .navbar .nav-menu li.current-menu-parent .sub-menu a {
-	color: #FFF;
-	text-shadow: rgba(52,73,94,0.4) 0 1px 0;
-	padding: 15px 20px;
+	color: #fff;
 }
 
 .navbar .nav-menu li.current-menu-item .sub-menu a:hover, .navbar .nav-menu li.current-menu-parent .sub-menu a:hover, .navbar .nav-menu li .sub-menu a:hover {
-/*color: rgba(255,255,255,0.7);*/
 	text-decoration: none;
 	background: #13947C;
 }
@@ -318,19 +320,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .toggled-on li:hover a {
-	color: #FFF;
-}
-
-.navbar .toggled-on li:hover a:hover {
-	color: rgba(255,255,255,0.7);
-}
-
-.navbar .toggled-on li.current-menu-item a {
-	color: #ffeca2;
+	color: #fff;
 }
 
 .navbar .toggled-on li.current-menu-item a:hover {
-	color: #ffffff;
+	color: #fff;
 }
 
 .navbar .toggled-on li .sub-menu {
@@ -339,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .toggled-on li .sub-menu a {
-	color: #FFF;
+	color: #fff;
 	background: #17AF87;
 }
 
@@ -877,115 +871,114 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	@-webkit-keyframes glow {
-	0% {
-		background: rgba(255,255,255,0);
-		width: 50px;
-		height: 50px;
-		margin-left: 342px;
-		top: 225px;
+		0% {
+			background: rgba(255,255,255,0);
+			width: 50px;
+			height: 50px;
+			margin-left: 342px;
+			top: 225px;
+		}
+
+		50% {
+			background: rgba(255,255,255,0.5);
+		}
+
+		100% {
+			background: rgba(255,255,255,0);
+			width: 150px;
+			height: 150px;
+			margin-left: 292px;
+			top: 175px;
+		}
 	}
 
-	50% {
-		background: rgba(255,255,255,0.5);
+	@-moz-keyframes glow {
+		0% {
+			background: rgba(255,255,255,0);
+			width: 50px;
+			height: 50px;
+			margin-left: 342px;
+			top: 225px;
+		}
+
+		50% {
+			background: rgba(255,255,255,0.5);
+		}
+
+		100% {
+			background: rgba(255,255,255,0);
+			width: 150px;
+			height: 150px;
+			margin-left: 292px;
+			top: 175px;
+		}
 	}
 
-	100% {
-		background: rgba(255,255,255,0);
-		width: 150px;
-		height: 150px;
-		margin-left: 292px;
-		top: 175px;
-	}
-}
+	@-ms-keyframes glow {
+		0% {
+			background: rgba(255,255,255,0);
+			width: 50px;
+			height: 50px;
+			margin-left: 342px;
+			top: 225px;
+		}
 
-@-moz-keyframes glow {
-	0% {
-		background: rgba(255,255,255,0);
-		width: 50px;
-		height: 50px;
-		margin-left: 342px;
-		top: 225px;
-	}
+		50% {
+			background: rgba(255,255,255,0.5);
+		}
 
-	50% {
-		background: rgba(255,255,255,0.5);
-	}
-
-	100% {
-		background: rgba(255,255,255,0);
-		width: 150px;
-		height: 150px;
-		margin-left: 292px;
-		top: 175px;
-	}
-}
-
-@-ms-keyframes glow {
-	0% {
-		background: rgba(255,255,255,0);
-		width: 50px;
-		height: 50px;
-		margin-left: 342px;
-		top: 225px;
+		100% {
+			background: rgba(255,255,255,0);
+			width: 150px;
+			height: 150px;
+			margin-left: 292px;
+			top: 175px;
+		}
 	}
 
-	50% {
-		background: rgba(255,255,255,0.5);
+	@-o-keyframes glow {
+		0% {
+			background: rgba(255,255,255,0);
+			width: 50px;
+			height: 50px;
+			margin-left: 342px;
+			top: 225px;
+		}
+
+		50% {
+			background: rgba(255,255,255,0.5);
+		}
+
+		100% {
+			background: rgba(255,255,255,0);
+			width: 150px;
+			height: 150px;
+			margin-left: 292px;
+			top: 175px;
+		}
 	}
 
-	100% {
-		background: rgba(255,255,255,0);
-		width: 150px;
-		height: 150px;
-		margin-left: 292px;
-		top: 175px;
-	}
-}
+	@keyframes glow {
+		0% {
+			background: rgba(255,255,255,0);
+			width: 50px;
+			height: 50px;
+			margin-left: 342px;
+			top: 225px;
+		}
 
-@-o-keyframes glow {
-	0% {
-		background: rgba(255,255,255,0);
-		width: 50px;
-		height: 50px;
-		margin-left: 342px;
-		top: 225px;
-	}
+		50% {
+			background: rgba(255,255,255,0.5);
+		}
 
-	50% {
-		background: rgba(255,255,255,0.5);
+		100% {
+			background: rgba(255,255,255,0);
+			width: 150px;
+			height: 150px;
+			margin-left: 292px;
+			top: 175px;
+		}
 	}
-
-	100% {
-		background: rgba(255,255,255,0);
-		width: 150px;
-		height: 150px;
-		margin-left: 292px;
-		top: 175px;
-	}
-}
-
-@keyframes glow {
-	0% {
-		background: rgba(255,255,255,0);
-		width: 50px;
-		height: 50px;
-		margin-left: 342px;
-		top: 225px;
-	}
-
-	50% {
-		background: rgba(255,255,255,0.5);
-	}
-
-	100% {
-		background: rgba(255,255,255,0);
-		width: 150px;
-		height: 150px;
-		margin-left: 292px;
-		top: 175px;
-	}
-}
-
 
 }
 
