@@ -888,114 +888,115 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 	}
 
 	@-webkit-keyframes glow {
-		0% {
-			background: rgba(255,255,255,0);
-			width: 50px;
-			height: 50px;
-			margin-left: 342px;
-			top: 225px;
-		}
-
-		50% {
-			background: rgba(255,255,255,0.5);
-		}
-
-		100% {
-			background: rgba(255,255,255,0);
-			width: 150px;
-			height: 150px;
-			margin-left: 292px;
-			top: 175px;
-		}
+	0% {
+		background: rgba(255,255,255,0);
+		width: 50px;
+		height: 50px;
+		margin-left: 342px;
+		top: 225px;
 	}
 
-	@-moz-keyframes glow {
-		0% {
-			background: rgba(255,255,255,0);
-			width: 50px;
-			height: 50px;
-			margin-left: 342px;
-			top: 225px;
-		}
-
-		50% {
-			background: rgba(255,255,255,0.5);
-		}
-
-		100% {
-			background: rgba(255,255,255,0);
-			width: 150px;
-			height: 150px;
-			margin-left: 292px;
-			top: 175px;
-		}
+	50% {
+		background: rgba(255,255,255,0.5);
 	}
 
-	@-ms-keyframes glow {
-		0% {
-			background: rgba(255,255,255,0);
-			width: 50px;
-			height: 50px;
-			margin-left: 342px;
-			top: 225px;
-		}
+	100% {
+		background: rgba(255,255,255,0);
+		width: 150px;
+		height: 150px;
+		margin-left: 292px;
+		top: 175px;
+	}
+}
 
-		50% {
-			background: rgba(255,255,255,0.5);
-		}
-
-		100% {
-			background: rgba(255,255,255,0);
-			width: 150px;
-			height: 150px;
-			margin-left: 292px;
-			top: 175px;
-		}
+@-moz-keyframes glow {
+	0% {
+		background: rgba(255,255,255,0);
+		width: 50px;
+		height: 50px;
+		margin-left: 342px;
+		top: 225px;
 	}
 
-	@-o-keyframes glow {
-		0% {
-			background: rgba(255,255,255,0);
-			width: 50px;
-			height: 50px;
-			margin-left: 342px;
-			top: 225px;
-		}
-
-		50% {
-			background: rgba(255,255,255,0.5);
-		}
-
-		100% {
-			background: rgba(255,255,255,0);
-			width: 150px;
-			height: 150px;
-			margin-left: 292px;
-			top: 175px;
-		}
+	50% {
+		background: rgba(255,255,255,0.5);
 	}
 
-	@keyframes glow {
-		0% {
-			background: rgba(255,255,255,0);
-			width: 50px;
-			height: 50px;
-			margin-left: 342px;
-			top: 225px;
-		}
-
-		50% {
-			background: rgba(255,255,255,0.5);
-		}
-
-		100% {
-			background: rgba(255,255,255,0);
-			width: 150px;
-			height: 150px;
-			margin-left: 292px;
-			top: 175px;
-		}
+	100% {
+		background: rgba(255,255,255,0);
+		width: 150px;
+		height: 150px;
+		margin-left: 292px;
+		top: 175px;
 	}
+}
+
+@-ms-keyframes glow {
+	0% {
+		background: rgba(255,255,255,0);
+		width: 50px;
+		height: 50px;
+		margin-left: 342px;
+		top: 225px;
+	}
+
+	50% {
+		background: rgba(255,255,255,0.5);
+	}
+
+	100% {
+		background: rgba(255,255,255,0);
+		width: 150px;
+		height: 150px;
+		margin-left: 292px;
+		top: 175px;
+	}
+}
+
+@-o-keyframes glow {
+	0% {
+		background: rgba(255,255,255,0);
+		width: 50px;
+		height: 50px;
+		margin-left: 342px;
+		top: 225px;
+	}
+
+	50% {
+		background: rgba(255,255,255,0.5);
+	}
+
+	100% {
+		background: rgba(255,255,255,0);
+		width: 150px;
+		height: 150px;
+		margin-left: 292px;
+		top: 175px;
+	}
+}
+
+@keyframes glow {
+	0% {
+		background: rgba(255,255,255,0);
+		width: 50px;
+		height: 50px;
+		margin-left: 342px;
+		top: 225px;
+	}
+
+	50% {
+		background: rgba(255,255,255,0.5);
+	}
+
+	100% {
+		background: rgba(255,255,255,0);
+		width: 150px;
+		height: 150px;
+		margin-left: 292px;
+		top: 175px;
+	}
+}
+
 
 }
 
@@ -1093,7 +1094,6 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 		padding: 0 10px;
 	}
 }
-
 
 /*-------------------------------------*/
 /* ONE COLUMN */
@@ -2846,7 +2846,7 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 }
 
 .organizer-info ul li {
-	margin-right: 0.25em;
+	margin-right: .25em;
 }
 
 .organizer-info ul,
