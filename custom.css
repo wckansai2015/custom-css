@@ -579,6 +579,12 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 	padding: 10px 50px;
 }
 
+@media (max-width: 480px) {
+	.btn a {
+		padding: 10px 20px;
+	}
+}
+
 .single-wcb_session .btn {
 	font-size: 80%;
 	margin-top: 80px;
