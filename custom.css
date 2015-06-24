@@ -1098,26 +1098,26 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 /*-------------------------------------*/
 /* ONE COLUMN */
 /*-------------------------------------*/
-.page-id-6 .entry-header, .page-id-6 .entry-content, .page-id-6 .entry-meta, .page-id-6 #secondary .widget-area, .page-id-460743 .entry-header, .page-id-460743 .entry-content, .page-id-460743 .entry-meta, .page-id-460743 #secondary .widget-area, .page-id-476787 .entry-header, .page-id-476787 .entry-content, .page-id-476787 .entry-meta, .page-id-476787 #secondary .widget-area, .page-id-476754 .entry-header, .page-id-476754 .entry-content, .page-id-476754 .entry-meta, .page-id-476754 #secondary .widget-area {
+.page-id-460743 .entry-header, .page-id-460743 .entry-content, .page-id-460743 .entry-meta, .page-id-460743 #secondary .widget-area, .page-id-476787 .entry-header, .page-id-476787 .entry-content, .page-id-476787 .entry-meta, .page-id-476787 #secondary .widget-area, .page-id-476754 .entry-header, .page-id-476754 .entry-content, .page-id-476754 .entry-meta, .page-id-476754 #secondary .widget-area {
 	max-width: 1040px;
 	padding: 0;
 }
 
-.page-id-6 #primary, .page-id-460743 #primary, .page-id-476787 #primary, .page-id-476754 #primary {
+.page-id-460743 #primary, .page-id-476787 #primary, .page-id-476754 #primary {
 	width: auto;
 }
 
-.page-id-6 #secondary .widget-area, .page-id-460743 #secondary .widget-area, .page-id-476787 #secondary .widget-area, .page-id-476754 #secondary .widget-area {
+.page-id-460743 #secondary .widget-area, .page-id-476787 #secondary .widget-area, .page-id-476754 #secondary .widget-area {
 	left: 0 !important;
 }
 
 @media (max-width: 643px) {
-	.page-id-6 #secondary .widget-area, .page-id-460743 #secondary .widget-area, .page-id-476787 #secondary .widget-area, .page-id-476754 #secondary .widget-area {
+	.page-id-460743 #secondary .widget-area, .page-id-476787 #secondary .widget-area, .page-id-476754 #secondary .widget-area {
 		padding: 0 20px;
 	}
 }
 
-.page-id-6 #tertiary, .page-id-460743 #tertiary, .page-id-476787 #tertiary, .page-id-476754 #tertiary {
+.page-id-460743 #tertiary, .page-id-476787 #tertiary, .page-id-476754 #tertiary {
 	display: none;
 }
 
@@ -1286,10 +1286,6 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 
 .page-id-6 .wcorg-organizer .wcorg-organizer-description, .page-id-6 .wcorg-organizer .organizer-comment {
 	margin-bottom: 0;
-}
-
-.page-id-6 .site {
-	font-size: 12px;
 }
 
 /*-------------------------------------*/
@@ -1803,70 +1799,65 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 /*-------------------------------------*/
 .wcorg-speakers .wcorg-speaker {
 	position: relative;
-	margin-bottom: 60px;
+	background: #f9f9f9;
+	padding: 2em;
+	margin: 0 0 50px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
 }
 
 .wcorg-speakers .wcorg-speaker:last-of-type {
 	margin-bottom: 0;
 }
 
+.wcorg-speakers .wcorg-speaker > h2:first-child {
+	text-align: center;
+	padding-top: 125px;
+	font-weight: normal;
+	border-bottom: none;
+}
+
 .wcorg-speakers .wcorg-speaker .avatar {
 	position: absolute;
-	top: 0;
-	left: 0;
-	margin: 0;
+	top: 30px;
+	left: 50%;
+	margin-left: -50px;
+	overflow: hidden;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
 }
 
-.wcorg-speakers h2, .wcorg-speakers .speaker-info {
-	padding-left: 113px;
-}
-
-.wcorg-speakers h2 {
+.wcorg-speakers .wcorg-speaker .wcorg-speaker-description h2 {
+	font-size: 16px;
+	font-size: 1rem;
 	border-bottom: none;
-	color: #000;
-	padding-bottom: 0;
-	margin-bottom: 15px;
+	padding: 1em 0 0;
+	margin: 0.5em 0;
+	border-top: 1px solid #eee;
 }
 
-.wcorg-speakers .speaker-info {
-	min-height: 70px;
-}
-
-.wcorg-speakers .speaker-info .inblock-list {
+.wcorg-speakers .wcorg-speaker ul, .wcorg-speakers .wcorg-speaker p {
 	margin-bottom: 0;
 }
 
-.wcorg-speakers .speaker-info .inblock-list li {
-	margin-right: 10px;
+.wcorg-speakers .speaker-info {
+	text-align: center;
 }
 
-.wcorg-speakers .speaker-info .inblock-list a {
-	color: #FFF;
-	display: block;
-	line-height: normal;
+.wcorg-speakers .speaker-info .inblock-list li {
+	margin: 0 0.15em;
 }
 
 .wcorg-speakers .speaker-info .inblock-list a span {
 	width: auto;
 	height: auto;
 	vertical-align: top;
-}
-
-.wcorg-speakers .speaker-info .inblock-list a span:before {
-	font-size: 18px;
-}
-
-.wcorg-speakers .speaker-info .twitter a {
-	background: #00B1CE;
-	padding: 2px;
-}
-
-.wcorg-speakers .speaker-info .facebook a {
-	color: #103F77;
-}
-
-.wcorg-speakers .speaker-info .facebook a span:before {
-	font-size: 27px;
 }
 
 .wcorg-speakers .speaker-more section {
@@ -2846,7 +2837,7 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 }
 
 .organizer-info ul li {
-	margin-right: .25em;
+	margin: 0 .15em;
 }
 
 .organizer-info ul,
