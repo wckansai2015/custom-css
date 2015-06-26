@@ -8,9 +8,6 @@ body {
 	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 
-button, input, textarea {
-}
-
 input:focus,
 textarea:focus {
 	border-color: #17af92;
@@ -1545,6 +1542,38 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 		width: 100%;
 	}
 }
+
+@media (min-width: 1360px) {
+	.timetable.timetable-large {
+		width: 1280px;
+		margin-left: -120px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.timetable.timetable-large {
+		width: 1360px;
+		margin-left: -160px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.timetable.timetable-large {
+		width: 1520px;
+		margin-left: -240px;
+	}
+}
+
+@media (min-width: 1920px) {
+	.timetable.timetable-large {
+		width: 1840px;
+		margin-left: -400px;
+	}
+}
+
+/*-------------------------------------*/
+/* Post ID 2204 timetable end */
+/*-------------------------------------*/
 
 .post-476787 .attention-list {
 	padding-left: 0;
