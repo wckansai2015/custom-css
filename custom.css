@@ -388,16 +388,22 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 
 .entry-title {
 	color: #212121;
-	font-size: 36px;
+	font-size: 32px;
 	font-weight: bold;
+	margin-bottom: 0.5em;
 }
 
 .entry-title a {
-	color: #212121;
+	display: block;
+	background: #eee;
+	color: #666;
+	border-radius: 2px;
+	padding: 0.5em 0.7em;
 }
 
 .entry-title a:hover {
-	color: #212121;
+	color: #999;
+	text-decoration: none;
 }
 
 .entry-meta a {
@@ -405,7 +411,7 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 }
 
 .entry-meta a:hover {
-	color: #999;
+	color: #666;
 }
 
 .entry-meta .author {
@@ -774,6 +780,10 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 
 .page-id-786 > #page > #main > div#primary, .page-id-784 > #page > #main > div#primary, .page-id-881 > #page > #main > div#primary, .page-id-2204 > #page > #main > div#primary {
 	width: 100%;
+}
+
+div.sharedaddy h3.sd-title {
+	display: none;
 }
 
 /*-------------------------------------*/
@@ -1887,7 +1897,9 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 }
 
 #post-1194 .archive .hentry, .home .hentry {
-	padding-bottom: 60px;
+	border-left: 2px solid #eee;
+	padding: 1em 0 0 1.5em;
+	margin-bottom: 10em;
 }
 
 #post-476476 ul {
