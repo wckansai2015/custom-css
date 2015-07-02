@@ -54,6 +54,8 @@ table th {
 
 .navigation a {
 	text-decoration: none;
+	font-style: normal;
+
 }
 
 .navigation a:hover {
@@ -618,6 +620,14 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 	background: #17af92;
 }
 
+.paging-navigation .nav-previous .meta-nav {
+	padding: 22px 0 18px;
+}
+
+.paging-navigation .nav-next .meta-nav {
+	padding: 22px 0 18px;
+}
+
 .img-caption {
 	font-size: 80%;
 }
@@ -783,6 +793,14 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 }
 
 div.sharedaddy h3.sd-title {
+	display: none;
+}
+
+.site-main #primary #post-1194.hentry {
+	border-left: 0;
+}
+
+.site-main #primary #post-1194.hentry div.sharedaddy {
 	display: none;
 }
 
