@@ -2833,3 +2833,24 @@ div.sharedaddy h3.sd-title {
 		margin-bottom: 20px;
 	}
 }
+
+/**
+ * post-3018 (Sponsors)
+ */
+#post-3018 [class^="wcorg-sponsor-level-"] + [class^="wcorg-sponsor-level-"] {
+	margin-top: 20em;
+}
+
+#post-3018 [class^="wcorg-sponsor-level-"] > h2 {
+	border-top: 4px solid #f9d132;
+	border-bottom: 4px solid #f9d132;
+	font-size: 26px;
+	padding: 10px 0;
+	color: #17af92;
+}
+
+#post-3018 .wcorg-sponsor + .wcorg-sponsor {
+	margin-top: 10em;
+	border-top: 1px solid #eee;
+	padding-top: 2em;
+}
