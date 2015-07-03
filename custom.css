@@ -1744,10 +1744,10 @@ div.sharedaddy h3.sd-title {
 /*-------------------------------------*/
 /* SPEAKER */
 /*-------------------------------------*/
-.wcorg-speakers .wcorg-speaker {
+.wcorg-speakers .wcorg-speaker, .site-main #primary .wcb_speaker {
 	position: relative;
 	background: #f9f9f9;
-	padding: 2em;
+	padding: 155px 2em 2em;
 	margin: 0 0 50px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -1757,8 +1757,8 @@ div.sharedaddy h3.sd-title {
 }
 
 @media (max-width: 1000px) {
-	.wcorg-speakers .wcorg-speaker {
-		padding: 1em;
+	.wcorg-speakers .wcorg-speaker, .site-main #primary .wcb_speaker {
+		padding: 155px 1em 1em;
 		margin-bottom: 20px;
 	}
 }
@@ -1767,14 +1767,18 @@ div.sharedaddy h3.sd-title {
 	margin-bottom: 0;
 }
 
-.wcorg-speakers .wcorg-speaker > h2:first-child {
+.wcorg-speakers .wcorg-speaker > h2:first-child, .wcb_speaker .entry-header {
 	text-align: center;
-	padding-top: 125px;
 	font-weight: normal;
 	border-bottom: none;
 }
 
-.wcorg-speakers .wcorg-speaker .avatar {
+.wcb_speaker .entry-header h1 {
+	font-weight: normal;
+	font-size: 24px;
+}
+
+.wcorg-speakers .wcorg-speaker .avatar, .wcb_speaker .speaker-avatar {
 	position: absolute;
 	top: 30px;
 	left: 50%;
@@ -1787,7 +1791,7 @@ div.sharedaddy h3.sd-title {
 	border-radius: 50%;
 }
 
-.wcorg-speakers .wcorg-speaker .wcorg-speaker-description h2 {
+.wcorg-speakers .wcorg-speaker .wcorg-speaker-description h2, .wcb_speaker h2 {
 	font-size: 16px;
 	font-size: 1rem;
 	border-bottom: none;
@@ -1796,19 +1800,19 @@ div.sharedaddy h3.sd-title {
 	border-top: 1px solid #eee;
 }
 
-.wcorg-speakers .wcorg-speaker ul, .wcorg-speakers .wcorg-speaker p {
+.wcorg-speakers .wcorg-speaker ul, .wcorg-speakers .wcorg-speaker p, .wcb_speaker ul, .wcb_speaker p {
 	margin-bottom: 0;
 }
 
-.wcorg-speakers .speaker-info {
+.wcorg-speakers .speaker-info, .wcb_speaker .speaker-info {
 	text-align: center;
 }
 
-.wcorg-speakers .speaker-info .inblock-list li {
+.wcorg-speakers .speaker-info .inblock-list li, .wcb_speaker .speaker-info .inblock-list li {
 	margin: 0 0.15em;
 }
 
-.wcorg-speakers .speaker-info .inblock-list a span {
+.wcorg-speakers .speaker-info .inblock-list a span, .wcb_speaker .speaker-info .inblock-list a span {
 	width: auto;
 	height: auto;
 	vertical-align: top;
