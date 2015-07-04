@@ -1669,12 +1669,17 @@ div.sharedaddy h3.sd-title {
 	margin-bottom: 5px;
 }
 
+.wcorg-speakers .speak-sessions,
+.wcorg-speakers .speak-sessions ul {
+	padding-left: 0;
+}
+
 .speak-sessions li{
-	list-style:none;
+	list-style: none;
 }
 
 .speak-sessions > li {
-	border-left: 2px solid #f9d132;
+	border-left: 2px solid #eee;
 	padding-left: 10px;
 	margin-bottom: 10px;
 }
