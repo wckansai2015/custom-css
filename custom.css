@@ -1669,6 +1669,18 @@ div.sharedaddy h3.sd-title {
 	margin-bottom: 5px;
 }
 
+.speak-sessions li{
+    list-style:none;
+}
+
+.speak-sessions > li {
+    border-left: 2px solid #f9d132;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.speak-sessions .session-place:before,
+.speak-sessions .session-time:before,
 .type-wcb_session h3:before {
 	font-family: 'Genericons';
 	display: inline-block;
@@ -1676,10 +1688,12 @@ div.sharedaddy h3.sd-title {
 	font-size: 17px;
 }
 
+.speak-sessions .session-place:before,
 .type-wcb_session h3.session-place:before {
 	content: '\f417';
 }
 
+.speak-sessions .session-time:before,
 .type-wcb_session h3.session-time:before {
 	content: '\f303';
 }
@@ -1714,9 +1728,19 @@ div.sharedaddy h3.sd-title {
 
 .type-wcb_session .inner .more a {
 	text-decoration: none;
-	border: 1px solid #357599;
-	color: #357599;
+	border: 2px solid #17af92;
+	color: #17af92;
 	padding: 5px;
+}
+.type-wcb_session .inner .more a {
+	text-decoration: none;
+	border: 2px solid #17af92;
+	color: #17af92;
+	padding: 5px;
+}
+.type-wcb_session .inner .more a:hover {
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	opacity: .7;
 }
 
 .entry-content form .bank-more-box {
