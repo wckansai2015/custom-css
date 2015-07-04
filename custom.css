@@ -1665,18 +1665,18 @@ div.sharedaddy h3.sd-title {
 	font-size: 14px;
 	font-weight: normal;
 	color: #17af92;
-	border-bottom: 1px solid #7eb4cc;
+	border-bottom: 1px solid #17af92;
 	margin-bottom: 5px;
 }
 
 .speak-sessions li{
-    list-style:none;
+	list-style:none;
 }
 
 .speak-sessions > li {
-    border-left: 2px solid #f9d132;
-    padding-left: 10px;
-    margin-bottom: 10px;
+	border-left: 2px solid #f9d132;
+	padding-left: 10px;
+	margin-bottom: 10px;
 }
 
 .speak-sessions .session-place:before,
@@ -1702,6 +1702,11 @@ div.sharedaddy h3.sd-title {
 	margin-bottom: 10px;
 }
 
+.type-wcb_session .block-right h3:before,
+.type-wcb_session h3.session-speaker:before {
+	content: '\f304';
+}
+
 .type-wcb_session .profile-box {
 	width: 100%;
 	display: table;
@@ -1715,6 +1720,11 @@ div.sharedaddy h3.sd-title {
 
 .type-wcb_session .thumb {
 	width: 120px;
+}
+
+.type-wcb_session .thumb img {
+	border-radius: 50%;
+	overflow: hidden;
 }
 
 .type-wcb_session .inner h4 {
