@@ -1475,10 +1475,6 @@ div.sharedaddy h3.sd-title {
 	color: #17af92;
 }
 
-.timetable dl dt a:hover {
-	text-decoration: underline;
-}
-
 .timetable dl dd {
 	padding-left: 0;
 }
@@ -2673,11 +2669,6 @@ div.sharedaddy h3.sd-title {
 
 .timetable dl dt a {
 	text-decoration: none;
-	color: #21759b;
-}
-
-.timetable dl dt a:hover {
-	text-decoration: underline;
 }
 
 .timetable dl dd {
@@ -2715,11 +2706,15 @@ div.sharedaddy h3.sd-title {
 }
 
 .timetable dl dd a {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .timetable dl dd a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+}
+
+.timetable dl dd.speaker-name a {
+	color: #212121;
 }
 
 @media (max-width: 643px) {
