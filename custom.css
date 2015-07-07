@@ -2910,3 +2910,24 @@ div.sharedaddy h3.sd-title {
 	border-top: 1px solid #eee;
 	padding-top: 2em;
 }
+
+/*
+ * Session消す
+ */
+.speaker-sessions,
+#speaker-session-names {
+    display: none;
+}
+
+/*
+ * *1などの補足テキスト用
+ */
+.supplementation dd {
+    margin-bottom: 0;
+    padding-left: 20px!important;
+}
+
+.supplementation {
+    font-size: 0.5rem;
+    line-height: 1.5;
+}
