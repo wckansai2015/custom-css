@@ -1665,6 +1665,8 @@ div.sharedaddy h3.sd-title {
 	margin-bottom: 5px;
 }
 
+.wcb_speaker .speak-sessions,
+.wcb_speaker .speak-sessions ul,
 .wcorg-speakers .speak-sessions,
 .wcorg-speakers .speak-sessions ul {
 	padding-left: 0;
