@@ -1666,6 +1666,11 @@ div.sharedaddy h3.sd-title {
 	margin-bottom: 5px;
 }
 
+.type-wcb_session h2.session-speakers,
+.type-wcb_session h2.session-speakers + ul {
+	display: none;
+}
+
 .wcb_speaker .speak-sessions,
 .wcb_speaker .speak-sessions ul,
 .wcorg-speakers .speak-sessions,
