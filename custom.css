@@ -597,8 +597,9 @@ ul.nav-menu ul a, .nav-menu ul ul a {
 }
 
 .single-wcb_session .btn {
-	font-size: 80%;
-	margin-top: 80px;
+/*	font-size: 80%;
+	margin-top: 80px;*/
+	margin:40px 0;
 }
 
 .mini-btn a {
@@ -1495,8 +1496,8 @@ div.sharedaddy h3.sd-title {
 .timetable dl dd.tt-label {
 	display: inline-block;
 	padding: 4px 7px;
-	font-size: 12px;
-	line-height: 12px;
+	font-size: 14px;
+	line-height: 14px;
 	margin-bottom: 10px;
 	background-color: #FF7928;
 	color: #fff;
@@ -1505,8 +1506,8 @@ div.sharedaddy h3.sd-title {
 .timetable-icon dl dt.tt-label {
 	display: inline-block;
 	padding: 4px 7px;
-	font-size: 12px;
-	line-height: 12px;
+	font-size: 14px;
+	line-height: 14px;
 	margin-left:0;
 	margin-bottom: 10px;
 	background-color: #FF7928;
