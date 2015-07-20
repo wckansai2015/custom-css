@@ -1799,6 +1799,9 @@ div.sharedaddy h3.sd-title {
 	border-radius: 4px;
 }
 
+.wcorg-speakers .wcorg-speaker, .site-main #primary .wcb_speaker {
+}
+
 @media (max-width: 1000px) {
 	.wcorg-speakers .wcorg-speaker, .site-main #primary .wcb_speaker {
 		padding: 155px 1em 1em;
@@ -1806,10 +1809,11 @@ div.sharedaddy h3.sd-title {
 	}
 }
 
-.wcorg-speakers .wcorg-speaker:last-of-type {
+.wcorg-sessions:last-of-type,.wcorg-speakers .wcorg-speaker:last-of-type {
 	margin-bottom: 0;
 }
 
+.wcorg-sessions >h2:first-child,
 .wcorg-speakers .wcorg-speaker > h2:first-child, .wcb_speaker .entry-header {
 	text-align: center;
 	font-weight: normal;
@@ -1833,7 +1837,6 @@ div.sharedaddy h3.sd-title {
 	-o-border-radius: 50%;
 	border-radius: 50%;
 }
-
 .wcorg-speakers .wcorg-speaker .wcorg-speaker-description h2, .wcb_speaker h2 {
 	font-size: 16px;
 	font-size: 1rem;
@@ -2933,4 +2936,20 @@ div.sharedaddy h3.sd-title {
 .supplementation {
     font-size: 0.5rem;
     line-height: 1.5;
+}
+
+
+/*-------------------------------------*/
+/* SESSION */
+/*-------------------------------------*/
+.wcorg-session {
+	position: relative;
+	background: #f9f9f9;
+	padding: 2em;
+	margin: 0 0 50px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
 }
